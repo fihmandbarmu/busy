@@ -1,13 +1,58 @@
-# Modern Business Web App
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus Business Solutions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-A lightweight, responsive frontend web application designed for a small business or agency.
+    <!-- Navigation Bar -->
+    <header>
+        <div class="logo">Nexus Business</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-## Features
-*   **Responsive Design:** Looks great on desktop and mobile.
-*   **Dynamic Services:** The services section is populated using JavaScript, making it easy to update your offerings without touching the HTML.
-*   **Interactive Contact Form:** Captures user input and triggers a JavaScript alert (ready to be connected to a backend).
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Grow Your Business With Us</h1>
+            <p>We provide innovative solutions to help your company scale and succeed in the digital age.</p>
+            <a href="#contact" class="btn">Get Started</a>
+        </div>
+    </section>
 
-## How to Run
-1. Ensure all four files (`index.html`, `style.css`, `script.js`, `README.md`) are saved in the same directory.
-2. Double-click `index.html` to open it in your default web browser.
-3. No server setup is required for this basic frontend!
+    <!-- Dynamic Services Section -->
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <!-- JavaScript will inject service cards into this container -->
+        <div id="service-container" class="service-grid"></div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" rows="5" placeholder="How can we help you?" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Nexus Business Solutions. All rights reserved.</p>
+    </footer>
+
+    <!-- Link to JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
